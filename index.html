@@ -10,52 +10,44 @@
   </head>
 
   <body id="top">
-     <header>
-   <a href="#"><img id="header-logo" src="Createam_logo_yellow-standing_en.png" alt="Createam logo" onclick="animateTo(document.getElementById('top'))"></a>
-    <div class="dropdown-menu">
-<button class="menu-btn"><i class="fas fa-bars fa-lg"></i></button>
-<div class="menu-content">
-<a class="links" href="#byraet" onclick="animateTo(document.getElementById('byraet'))">Byrået</a>
-<a class="links" href="#hodene" onclick="animateTo(document.getElementById('hodene'))">Hodene</a>
-<a class="links" href="#referanser" onclick="animateTo(document.getElementById('referanser'))">Referanser</a>
-<a class="links" href="#kontaktinfo" onclick="animateTo(document.getElementById('kontaktinfo'))">Kontakt</a>
-</div>
-</div>
-   <nav>
-     <ul>
-       <li><a href="#byraet" onclick="animateTo(document.getElementById('byraet'))">Byrået</a></li>
-       <li><a href="#hodene" onclick="animateTo(document.getElementById('hodene'))">Hodene</a></li>
-       <li><a href="#referanser" onclick="animateTo(document.getElementById('referanser'))">Referanser</a></li>
-       <li> <a href="#kontaktinfo" onclick="animateTo(document.getElementById('kontaktinfo'))">Kontakt</a></li>
-     </ul>
-   </nav>
+    <header>
+      <a href="#"><img id="header-logo" src="Createam_logo_yellow-standing_en.png" alt="Createam logo" onclick="animateTo(document.getElementById('top'))"></a>
+      <div class="dropdown-menu">
+        <button class="menu-btn"><i class="fas fa-bars fa-lg"></i></button>
+        <div class="menu-content">
+          <a class="links scroll-link" href="#byraet">Byrået</a>
+          <a class="links scroll-link" href="#hodene">Hodene</a>
+          <a class="links scroll-link" href="#referanser">Referanser</a>
+          <a class="links scroll-link" href="#kontaktinfo">Kontakt</a>
+        </div>
+      </div>
 
+      <nav>
+        <ul>
+          <li><a class="scroll-link" href="#byraet">Byrået</a></li>
+          <li><a class="scroll-link" href="#hodene">Hodene</a></li>
+          <li><a class="scroll-link" href="#referanser">Referanser</a></li>
+          <li> <a class="scroll-link" href="#kontaktinfo">Kontakt</a></li>
+        </ul>
+      </nav>
 
-
-   <button class="cta" id="header-button" onclick="location.href='mailto:hjeeelp@createam.no';"><i class="fas fa-envelope fa-lg"></i> Få hjelp!</button>
- </header>
+      <button class="cta" id="header-button" onclick="location.href='mailto:hjeeelp@createam.no';"><i class="fas fa-envelope fa-lg"></i> Få hjelp!</button>
+    </header>
 
     <main>
       <div id="overskrift">
         <div class="overskrift-wrapper-mobil">
           <img src="createam_smal_logo.png" alt="Createam logo" class="main-logo-mobil">
-
         </div>
-
         <div class="overskrift-wrapper">
           <div class="img1-wrapper"></div>
           <div class="img2-wrapper"></div>
         </div>
       </div>
 
-
-
-
-
       <div id="garanti">
         <div id="garanti-tekst">
-           <h2 id="trenger-du">Trenger du...</h2>
-
+          <h2 id="trenger-du">Trenger du...</h2>
           <ul>
             <li>raske prosesser</li>
             <li>knallgode leveranser</li>
@@ -63,11 +55,8 @@
             <li>noen som faktisk forstår deg, fordi de selv er små</li>
             <li>lavere priser og vel så gode resultater som med de store byråene</li>
           </ul>
-
           <p>Da trenger du Createam! Ta kontakt i dag, så vi sammen kan hjelpe deg og bedriften din.</p>
-
         </div>
-
       </div>
 
       <img src="createam_stikryss.png" alt="Createam stikryss" class="stikryss-mobil">
@@ -104,37 +93,33 @@
     <footer>
       <div id="kontaktinfo"><h2></h2></div>
       <p>Createam AS, Østerdalsgata 1B - 4. etasje, 0658 Oslo <br> Tlf. 922 66 300 <br> post@createam.no  <br> Org.nr. NO 927404214 MVA</p>
-
-
       <div id="copyright">Nettside utviklet av Hanne Mørkeseth</div>
     </footer>
 
     <script type="text/javascript" src="animation.js"></script>
 
     <script src="https://kit.fontawesome.com/bd2d1c708f.js" crossorigin="anonymous"></script>
-   <script>
-let dropdownBtn = document.querySelector('.menu-btn');
-let menuContent = document.querySelector('.menu-content');
-let menuLinks = document.querySelector('.links');
-dropdownBtn.addEventListener('click',()=>{
-   if(menuContent.style.display===""){
-      menuContent.style.display="block";
-   } else {
-      menuContent.style.display="";
-   }
-
-})
+    <script>
+     let dropdownBtn = document.querySelector('.menu-btn');
+     let menuContent = document.querySelector('.menu-content');
+     let menuLinks = document.querySelector('.links');
+     dropdownBtn.addEventListener('click',()=>{
+       if(menuContent.style.display===""){
+         menuContent.style.display="block";
+        } else {
+         menuContent.style.display="";
+        }
+     })
      document.querySelectorAll('.links').forEach(menuLinks => {
-     menuLinks.addEventListener('click',()=>{
-   if(menuContent.style.display===""){
-      menuContent.style.display="block";
-   } else {
-      menuContent.style.display="";
-   }
-
-})
-       })
-</script>
+       menuLinks.addEventListener('click',()=>{
+         if(menuContent.style.display===""){
+            menuContent.style.display="block";
+          } else {
+            menuContent.style.display="";
+          }
+        })
+      })
+    </script>
 
   </body>
 </html>
